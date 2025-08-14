@@ -1,62 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Webpage</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1em 0;
-        }
-        main {
-            padding: 20px;
-            text-align: center;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        button {
-            padding: 10px 15px;
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #0056b3;
-        }
-    </style>
+    <title>Light On/Off</title>
 </head>
-<body>
+<body style="text-align:center; font-family: Arial;">
 
-    <header>
-        <h1>Welcome to My Webpage</h1>
-    </header>
+    <h1>Light On/Off</h1>
+    <!-- Light Image -->
+    <img id="lightBulb" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width:150px;"><br><br>
 
-    <main>
-        <h2>Hello, World!</h2>
-        <p>This is my first HTML page with a bit of CSS styling.</p>
-        <button onclick="alert('Hello there!')">Click Me</button>
-    </main>
-
-    <footer>
-        <p>© 2025 My First Website</p>
-    </footer>
+    <!-- Buttons to turn light ON and OFF -->
+    <button onclick="document.getElementById('lightBulb').src='https://www.w3schools.com/js/pic_bulbon.gif'">Turn On</button>
+    <button onclick="document.getElementById('lightBulb').src='https://www.w3schools.com/js/pic_bulboff.gif'">Turn Off</button>
 
 </body>
 </html>
